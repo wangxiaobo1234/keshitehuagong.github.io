@@ -3,11 +3,12 @@
 <head>
   
   <meta charset="utf-8" />
-  <title>Projects - Metro Mania</title>
+  <title>Portfolio - Metro Mania</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="author" content="" />
+
 
   <!-- Stylesheets -->
   <link href="style/bootstrap.css" rel="stylesheet" />
@@ -120,77 +121,94 @@
 
 <!-- Navigation bar ends -->
 
-<div class="content projects">
+<div class="content">
   <div class="container">
 
-    <h2>Projects</h2>
-    <p class="big grey">Something Goes Here.</p>
-    <hr />
+  <h2>Portfolio</h2>
+  <p class="big grey">Something Goes Here.</p>
+  <hr />
 
-    <div class="row">
+  <div class="row">
+    <div class="span12">
 
-                        <div class="span8">
-                            <!-- Title -->
-                              <h3>Interdum Mauris Velehicula</h3>
-                              <!-- Project slideshow. Default Bootstrap Carousel used  -->
-                              
-                              <div id="myCarousel" class="carousel slide">
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                  <div class="active item"><img src="img/photos/1.jpg" alt="" /></div>
-                                  <div class="item"><img src="img/photos/2.jpg" alt="" /></div>
-                                  <div class="item"><img src="img/photos/3.jpg" alt="" /></div>
-                                  <div class="item"><img src="img/photos/4.jpg" alt="" /></div>
-                                  <div class="item"><img src="img/photos/5.jpg" alt="" /></div>
-                                </div>
-                                <!-- Carousel nav -->
-                                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                              </div>
-                           </div>                        
-                           <div class="span4"> 
-                              <!-- Project details -->
-                              <div class="prdetails well">
-                                 <!-- Project title -->
-                                 <h6 class="title">Project Details</h6>
-                                 <!-- Project para -->
-                                 <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. </p>
-                                 <hr />
-                                 <strong>Tools Used</strong>
-                                 <!-- List -->
-                                 <ul>
-                                    <li>HTML5/CSS3/jQuery</li>
-                                    <li>PHP & MySQL</li>
-                                    <li>WordPress Blog</li>
-                                    <li>Zend Framework</li>
-                                 </ul>
-                                 <hr />
-                                 <!-- Buttons -->
-                                 <div class="button"><a href="#">Launch Project</a> </div>
-                                 <br />
-                              </div>
+                    <p>
+                        <!-- Add filter names inside "data-filter". For example ".web-design", ".seo", etc., Filter names are used to filter the below images. -->
+                        <div class="button">
+                           <ul id="filters">
+                             <li><a href="#" data-filter="*">All</a></li>
+                             <li><a href="#" data-filter=".one">One</a></li>
+                             <li><a href="#" data-filter=".two">Two</a></li>
+                             <li><a href="#" data-filter=".three">Three</a></li>
+                             <li><a href="#" data-filter=".four">Four</a></li>
+                             <li><a href="#" data-filter=".five">Five</a></li>
+                           </ul>
+                        </div>
+                    </p>
+                        
+                        
+                    <div id="portfolio">
+                        <!-- Add the above used filter names inside div tag. You can add more than one filter names. For image lightbox you need to include "a" tag pointing to image link, along with the class "prettyPhoto[pp_gal]".-->
+                       <div class="element one three"><a href="img/photos/1.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_1.jpg" alt="" />
+                           <!-- Portfolio caption -->
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
                            </div>
-
-                           <div class="span12">
-                            <div class="bor"></div>
-                              <div class="related-projects">
-                                <!-- Title -->
-                                <h5 class="title">Related Projects</h5>
-                                <!-- Image thumbnail with links -->
-                                <a href="#"><img src="img/photos/tn_1.jpg" alt="" /></a> 
-                                <a href="#"><img src="img/photos/tn_2.jpg" alt="" /></a> 
-                                <a href="#"><img src="img/photos/tn_3.jpg" alt="" /></a> 
-                                <a href="#"><img src="img/photos/tn_4.jpg" alt="" /></a> 
-                                <a href="#"><img src="img/photos/tn_5.jpg" alt="" /></a>
-
-                              </div>
-                            <div class="bor"></div>
-                           </div>
+                       </a></div>
+                       <div class="element two one"><a href="img/photos/2.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_2.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div>
+                       <div class="element three five"><a href="img/photos/3.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_3.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div>
+                       <div class="element four two"><a href="img/photos/4.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_4.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div>
+                       <div class="element five one"><a href="img/photos/5.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_5.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div> 
+                       <div class="element four five"><a href="img/photos/6.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_6.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div> 
+                       <div class="element three one"><a href="img/photos/7.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_7.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div>
+                       <div class="element three one"><a href="img/photos/8.jpg" class="prettyPhoto[pp_gal]">
+                           <img src="img/photos/tn_8.jpg" alt="" />
+                           <div class="pcap">
+                              <h4>Lorem ipsum dolor</h4>
+                              <p>Sed justo dui, scelerisque ut consectetur vel, eleifend id erat.</p>
+                           </div>                           
+                       </a></div>
+                    </div>
 
     </div>
-
- 
-
+  </div>
 
   <div class="border"></div>
 

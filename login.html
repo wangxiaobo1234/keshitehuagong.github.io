@@ -1,199 +1,331 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Login</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Construction  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<script src="js/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<script src="js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-	
-  </script>
-  <script src="js/bootstrap.js"></script>
-<!--startsmothscrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-<!--endsmothscrolling-->
-<link rel="stylesheet" href="css/swipebox.css">
-			<script src="js/jquery.swipebox.min.js"></script> 
-			    <script type="text/javascript">
-					jQuery(function($) {
-						$(".swipebox").swipebox();
-					});
-				</script>
+  
+  <meta charset="utf-8" />
+  <title>Login - Metro Mania</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
 
-</head>
+
+  <!-- Stylesheets -->
+  <link href="style/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/font-awesome.css" />
+  <link href="style/prettyPhoto.css" rel="stylesheet" />
+  <!-- Parallax slider -->
+  <link rel="stylesheet" href="style/slider.css" />
+  <!-- Flexslider -->
+  <link rel="stylesheet" href="style/flexslider.css" />
+
+  <link href="style/style.css" rel="stylesheet" />
+
+  <!-- Colors - Orange, Purple, Light Blue (lblue), Red, Green and Blue -->
+  <link href="style/lblue.css" rel="stylesheet" />
+
+  <link href="style/bootstrap-responsive.css" rel="stylesheet" />
+  
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
 <body>
-		<!--start-header-section-->
-	<div class="header">
-		<div class="container">
-			<div class="header-top">
-				<div class="logo">
-					<h1><a href="index.html">Construction Co</a></h1>
-				</div>
-				<div class="buttons">
-				   	<a href="joinus.html" class="button">join us</a>
-		            <a href="login.html" class="button1">login</a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="header-bottom">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						  <ul class="nav navbar-nav cl-effect-16">
-							<li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-							<li><a href="about.html">About</a></li>
-							 <li class="dropdown">
-							  <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-							  <ul class="dropdown-menu">
-								 <li><a href="services.html">Services1</a></li>
-								<li><a href="services.html">Services2</a></li>
-								<li><a href="services.html">Services3</a></li>
-							  </ul>
-							</li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="codes.html">Codes</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-							<form class="navbar-form navbar-right" role="search">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Search">
-									<input type="submit" value="">
-								</div>
-							</form>
 
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-		<!--end header-section-->
-	<div class="content">
- <div class="main-1">
-		<div class="container">
-<div class="login-page">
-			   <div class="account_grid">
-			   <div class="col-md-6 login-left">
-			  	 <h3>NEW CUSTOMERS</h3>
-				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-				 <a class="acount-btn" href="joinus.html">Create an Account</a>
-			   </div>
-			   <div class="col-md-6 login-right">
-			  	<h3>REGISTERED CUSTOMERS</h3>
-				<p>If you have an account with us, please log in.</p>
-				<form>
-				  <div>
-					<span>Email Address<label>*</label></span>
-					<input type="text"> 
-				  </div>
-				  <div>
-					<span>Password<label>*</label></span>
-					<input type="password"> 
-				  </div>
-				  <a class="forgot" href="#">Forgot Your Password?</a>
-				  <input type="submit" value="Login">
-			    </form>
-			   </div>	
-			   <div class="clearfix"> </div>
-			 </div>
-		   </div>
-		   </div>
-	</div>
-<!-- login -->
+<!-- Header Starts -->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <div class="logo">
+          <h1><a href="#">Metro <span class="color">Mania</span></a></h1>
+          <div class="hmeta">Responsive Metro Styled Theme</div>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="form">
+          <form method="get" id="searchform" action="#" class="form-search" />
+            <input type="text" value="" name="s" id="s" class="input-medium" />
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
+<!-- Navigation bar starts -->
+          <div class="navbar">
+           <div class="navbar-inner">
+             <div class="container">
+               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                 <span>Menu</span>
+               </a>
+               <div class="nav-collapse collapse">
+                 <ul class="nav">
+                   <li><a href="index.html">Home #1</a></li>
+                   <li><a href="index1.html">Home #2</a></li>
+                   <!-- Refer Bootstrap navbar doc -->
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #1 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="landing-page.html">Landing Page</a></li>
+                        <li><a href="pricing.html">Pricing Table</a></li>
+                        <li><a href="service-3.html">Service</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="404.html">404</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="register1.html">Register</a></li>
+                        <li><a href="login1.html">Login</a></li>
+                      </ul>
+                   </li>                   
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #2<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                        <li><a href="features-4.html">Features</a></li>
+                        <li><a href="statement.html">Statement</a></li>
+                        <li><a href="tasks.html">Tasks</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="make-post.html">Make Post</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="error-log.html">Error Log</a></li>
+                      </ul>
+                   </li>
+                   <li><a href="service.html">Service</a></li>
+                   <li><a href="aboutus.html">About Us</a></li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog-2.html">Blog #1</a></li>
+                        <li><a href="blog-4.html">Blog #1</a></li>
+                        <li><a href="blog-single.html">Blog Single</a></li>
+                      </ul>
+                    </li>
+                                        
+                   <li><a href="portfolio.html">Portfolio</a></li>
+                   <li><a href="contactus.html">Contact</a></li>
+                 </ul>
+               </div>
+              </div>
+           </div>
+         </div>
+
+<!-- Navigation bar ends -->
+
+<div class="content">
+  <div class="container">
+
+          <div class="register">
+              <div class="row">
+                <div class="span6">
+                  <h2>Register Today</h2>
+                  <p class="big grey">Morbi tincidunt posuere turpis eu laoreet</p>
+                  <p>Nullam in est urna. In vitae adipiscing enim. Curabitur rhoncus condimentum lorem, non convallis dolor faucibus eget. In vitae adipiscing enim. Curabitur rhoncus condimentum lorem, non convallis dolor faucibus eget. In ut nulla est. </p>
+                  <p>Nullam in est urna. In vitae adipiscing enim. In ut nulla est. Nullam in est urna. In vitae adipiscing enim. Curabitur rhoncus condimentum lorem, non convallis dolor faucibus eget. In ut nulla est. </p>
+
+                </div>
+
+                <div class="span6">
+                  <div class="formy">
+                     <h5>Login to your Account</h5>
+                                  <div class="form">
+                                      <!-- Login form (not working)-->
+                                      <form class="form-horizontal" />
+                                          <!-- Username -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="username">Username</label>
+                                            <div class="controls">
+                                              <input type="text" class="input-large" id="username" />
+                                            </div>
+                                          </div>
+                                          <!-- Password -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="email">Password</label>
+                                            <div class="controls">
+                                              <input type="password" class="input-large" id="password" />
+                                            </div>
+                                          </div>
+                                          <div class="control-group">
+                                             <div class="controls">
+                                                <label class="checkbox">
+                                                <input type="checkbox" /> Remember me
+                                                </label>
+                                             </div>
+                                          </div>                                                                               
+                                          <!-- Buttons -->
+                                          <div class="form-actions">
+                                             <!-- Buttons -->
+                                            <button type="submit" class="btn">Login</button>
+                                            <button type="reset" class="btn">Reset</button>
+                                          </div>
+                                      </form>
+                                             Don't have Account? <a href="register.html">Register</a>
+                                    </div> 
+                                  </div>
+
+                </div>
+              </div>
+            </div>              
+
+
+  <div class="border"></div>
+
+<!-- Product & links starts -->
+
+<div class="prod">
+    <div class="row">
+      <div class="span4">
+        <div class="home-links">
+          <div class="col-l">
+            <h5>Downloads</h5>
+            <ul>
+              <li><a href="#">Linux 8</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">GTalk</a></li>
+              <li><a href="#">Google Search</a></li>
+              <li><a href="#">Linux Phone</a></li>
+            </ul>
+          </div>
+          <div class="col-r">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">Linux Update</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">GTalk</a></li>
+              <li><a href="#">Google Search</a></li>
+              <li><a href="#">Linux Phone</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="span8"> 
+        <div class="home-product">
+          <div class="home-prod-img" id="s1">
+              <img src="img/photos/s1.jpg" />
+              <img src="img/photos/s2.jpg" />
+              <img src="img/photos/s3.jpg" />
+          </div>
+          <h3>Canonical Linux 8</h3>
+          <p>Aliquam ut feugiat ante. Curabitur justo aliquam. Maecenas turpis urna, eleifend et venenatis eget, ultricies quis urna. Aliquam ut feugiat ante. Curabitur justo aliquam. Aliquam ut feugiat ante. Curabitur justo aliquam. </p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
-	<!--detail-->
-		<div class="details-section">
-			<div class="container">
-				<div class="details-grids">
-					<div class="col-md-4 detail-grid">
-						<div class="logo1">
-						<h1><a href="index.html">Construction Co</a></h1>
-						</div>
-						<p>Cum sociis natoque penatibus et magnis. dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-					</div>
-					<div class="col-md-4 detail-grid">
-						<ul>
-							<li class="dot"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>4978 Diamond Circle Washington, </li>
-							<li class="mobile"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+212 522 275 386</li>
-							<li class="mes"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:info@example.com">mail@example.com</a></a></li>
-							<li class="sign"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><a href="#">www.example.com</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 detail-grid">
-						<p>Cum sociis natoque penatibus et magnis. dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						<form>
-							<h5>Newsletter<h5>
-							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-							<input type="submit" value=" ">
-						</form>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-	<!--detail-->
-	<!--footer-->
-		<div class="footer-section">
-						<div class="container">
-							<div class="footer-top">
-								<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-									</div>
-							<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-				</div>
-			</div>
+<!-- Product & links ends --> 
+
+  </div>
+</div>
+
+<!-- Social -->
+
+<div class="social-links">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p class="big"><span>Follow Us On</span> <a href="#"><i class="icon-facebook"></i>Facebook</a> <a href="#"><i class="icon-twitter"></i>Twitter</a> <a href="#"><i class="icon-google-plus"></i>Google Plus</a> <a href="#"><i class="icon-linkedin"></i>LinkedIn</a></p>
+      </div>
+    </div>    
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="widgets">
+        <div class="span4">
+          <div class="fwidget">
+
+            <div class="col-l">
+              <h6>Downlaods</h6>
+              <ul>
+                <li><a href="#">Condimentum</a></li>
+                <li><a href="#">Etiam at</a></li>
+                <li><a href="#">Fusce vel</a></li>
+                <li><a href="#">Vivamus</a></li>
+                <li><a href="#">Pellentesque</a></li>
+              </ul>
+            </div>
+
+            <div class="col-r">
+              <h6>Support</h6>
+              <ul>
+                <li><a href="#">Condimentum</a></li>
+                <li><a href="#">Etiam at</a></li>
+                <li><a href="#">Fusce vel</a></li>
+                <li><a href="#">Vivamus</a></li>
+                <li><a href="#">Pellentesque</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="span4">
+          <div class="fwidget">
+            <h6>Categories</h6>
+            <ul>
+              <li><a href="#">Condimentum - Condimentum gravida</a></li>
+              <li><a href="#">Etiam at - Condimentum gravida</a></li>
+              <li><a href="#">Fusce vel - Condimentum gravida</a></li>
+              <li><a href="#">Vivamus - Condimentum gravida</a></li>
+              <li><a href="#">Pellentesque - Condimentum gravida</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="span4">
+          <div class="fwidget">
+            <h6>Recent Posts</h6>
+            <ul>
+              <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
+              <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
+              <li><a href="#">Fusce vel magna faucibus felis dapibus facilisis</a></li>
+              <li><a href="#">Vivamus scelerisque dui in massa</a></li>
+              <li><a href="#">Pellentesque eget adipiscing dui semper</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="span12">
+          <div class="copy">
+            <h6>Metro <span class="color">Mania</span></h6>
+            <p>Copyright &copy; <a href="#">Your Site</a> - <a href="index.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="faq.html">FAQ</a> | <a href="contactus.html">Contact Us</a></p>
+          </div>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</footer> 	
+
+<!-- JS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script> 
+<script src="js/jquery.isotope.js"></script> <!-- Isotope for gallery -->
+<script src="js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto for images -->
+<script src="js/jquery.cslider.js"></script> <!-- Parallax slider -->
+<script src="js/modernizr.custom.28468.js"></script>
+<script src="js/filter.js"></script> <!-- Filter for support page -->
+<script src="js/cycle.js"></script> <!-- Cycle slider -->
+<script src="js/jquery.flexslider-min.js"></script> <!-- Flex slider -->
+
+<script src="js/easing.js"></script> <!-- Easing -->
+<script src="js/custom.js"></script>
+
 </body>
-</html> 
+</html>
